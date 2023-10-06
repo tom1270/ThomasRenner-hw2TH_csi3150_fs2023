@@ -1,0 +1,136 @@
+/* Layout Styles */
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.left-section {
+  grid-column: 1;
+}
+
+.right-section {
+  grid-column: 2;
+}
+
+.logo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.logo-name {
+  text-align: center;
+  size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: relative;
+  background-color: #333; /* Dark background for the navbar */
+  padding: 10px; /* Padding to give space around the navbar */
+  border-radius: 5px; /* Rounded corners for the navbar */
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333; /* Matching background color for the dropdown */
+  border: 1px solid #555; /* Slight border for definition */
+  border-radius: 5px; /* Rounded corners for the dropdown */
+}
+
+.menu a {
+  padding: 8px 12px; /* Padding to give space around the links */
+  color: #eee; /* Light color for the text */
+  text-decoration: none; /* Remove underline from the links */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.menu a:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  color: #eee; /* Light color for the hamburger icon */
+  font-size: 24px; /* Increase the size of the hamburger icon */
+  background-color: #333; /* Dark background for the hamburger icon */
+  padding: 8px 12px; /* Padding to give space around the hamburger icon */
+  border-radius: 5px; /* Rounded corners for the hamburger icon */
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+#checkbox_toggle:checked + .hamburger + .menu {
+  display: flex;
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  .hamburger,
+  #checkbox_toggle {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: static;
+    background-color: transparent;
+    border: none;
+  }
+
+  .right-section img {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+.button {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.right-section {
+  position: relative;
+}
+
+.right-section img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.3s;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 10px;
+}

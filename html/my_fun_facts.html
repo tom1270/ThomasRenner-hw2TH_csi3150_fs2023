@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- this is a comment in html -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thomas Renner Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./image/resumePic.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS Library / JS libraries -->
+  </head>
+  <body>
+    <header id="page_header">
+      <div id="logoContainer"></div>
+      <img
+        src="../image/resumePic.png"
+        alt="Personal Avatar"
+        height="75"
+        width="90"
+      />
+      <span><strong>Some Fun Facts About Me</strong></span>
+      <nav class="navbar">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <a href="../index.html">Home</a>
+          <a href="./my_resume.html">Resume</a>
+          <a href="./my_fun_facts.html">Fun Facts</a>
+        </div>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <section id="fun-facts">
+        <!-- Favorite Book -->
+        <div class="fun-fact">
+          <h3>Favorite Book</h3>
+          <img src="../image/bcover.png" alt="Book Cover" />
+          <p>
+            Title:
+            <a
+              href="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299/ref=asc_df_0735211299?tag=bingshoppinga-20&linkCode=df0&hvadid=80195681258160&hvnetw=o&hvqmt=e&hvbmt=be&hvdev=c&hvlocint=&hvlocphy=&hvtargid=pla-4583795260899949&psc=1"
+              >Atomic Habits</a
+            >
+          </p>
+          <p>
+            Description: The Book "Atomic Habits" is fantastic. It breaks down
+            simple things to do in order to form new Habits. It is very well
+            written and easy to understand, so that anyone can follow the ideas
+            of psychology, biology, and neuroscience.
+          </p>
+        </div>
+
+        <!-- Favorite Audio Track -->
+        <div class="fun-fact">
+          <h3>Favorite Audio Track</h3>
+          <p>Title: Jump</p>
+          <p>Artist: Van Halen</p>
+          <audio controls>
+            <source src="../audio/AudioJump.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+          </audio>
+          <p>
+            Listen and purchase:
+            <a
+              href="https://music.apple.com/us/album/jump/976831013?i=976832495"
+              >Itunes</a
+            >
+          </p>
+        </div>
+
+        <!-- Favorite Movie/TV Series -->
+        <div class="fun-fact">
+          <h3>Favorite Movie</h3>
+          <p>Top Gun: Maverick</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/g4U4BQW9OEk"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <p>&copy; 2023 Thomas Renner</p>
+      <a href="mailto:thomas.renner02@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/thomas-renner-827b5b17a">LinkedIn</a>
+      <a href="https://github.com/tom1270?tab=repositories">Github</a>
+    </footer>
+  </body>
+</html>
