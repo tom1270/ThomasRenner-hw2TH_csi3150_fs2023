@@ -126,8 +126,11 @@ body {
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
+  grid-column: 1 / -1; /* This will make the footer span across all the grid columns */
+  width: 100%; /* Ensures the footer takes the full width */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  margin: 0; /* Remove any margins */
+  padding: 20px; /* You can adjust this padding as needed */
 }
 
 footer a {
