@@ -113,12 +113,13 @@ body {
 
 .right-section {
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .right-section img {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  margin-top: 50px; /* Adjust or remove if not needed */
   max-width: 100%;
   height: auto;
   transition: filter 0.3s;
